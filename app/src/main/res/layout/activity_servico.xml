@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <View
+        android:id="@+id/bg_barra"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/navtop"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/txt_logo_top"
+        android:scaleType="centerCrop"
+        android:src="@drawable/nome_logo_wash"
+        app:layout_constraintBottom_toTopOf="@+id/view5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- NUMERO QUE REPRESENTA A QUANTIDADE QUE TEM NO CARRINHO   -->
+    <TextView
+        android:id="@+id/quantidadeItens"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/carrinhoDecompras"
+        app:layout_constraintEnd_toEndOf="@+id/carrinhoDecompras"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toEndOf="@+id/imageView" />
+
+    <!--  IMAGEM DO CARRINHO  -->
+    <ImageButton
+        android:id="@+id/carrinhoDecompras"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="@color/white"
+        android:onClick="abrirPedido"
+        app:layout_constraintBottom_toBottomOf="@+id/bg_barra"
+        app:layout_constraintEnd_toEndOf="@+id/bg_barra"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:srcCompat="@drawable/icone_carrinho_servicos_24"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <!-- BARRA DE DECORAÇÃO   -->
+    <View
+        android:id="@+id/view5"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/barra_de_decoracao"
+        android:backgroundTint="@color/azul_do_wash_azul"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bg_barra" />
+
+
+    <!-- FUNDO DE DECORAÇÃO   -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/fundo_decorativo_servicos"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view5">
+
+        <!--  RECYCLERVIEW DE SERVIÇOS      -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RecyclerServicos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:elevation="5dp"
+            tools:layout_editor_absoluteX="25dp"
+            tools:layout_editor_absoluteY="421dp" />
+
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom"
+        android:elevation="10dp"
+        android:background="@color/azul_do_wash_azul"
+        app:itemIconSize="35dp"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_navigation_menu"
+        tools:ignore="VisualLintBottomNav" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

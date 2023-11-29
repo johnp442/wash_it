@@ -1,0 +1,27 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Estado normal -->
+    <item android:state_focused="false">
+        <layer-list>
+            <item android:top="-2dp" android:right="-2dp" android:left="-2dp">
+                <shape android:shape="rectangle">
+                    <stroke
+                        android:width="2dp"
+                        android:color="#FFFFFF" /> <!-- Cor da linha quando não estiver focada -->
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <!-- Estado focado -->
+    <item android:state_focused="true">
+        <layer-list>
+            <item android:top="-2dp" android:right="-2dp" android:left="-2dp">
+                <shape android:shape="rectangle">
+                    <stroke
+                        android:width="2dp"
+                        android:color="#FFFFFF" /> <!-- Cor da linha quando estiver focada -->
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

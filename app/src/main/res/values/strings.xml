@@ -1,0 +1,109 @@
+<resources>
+    <string name="app_name">Wash it</string>
+    <string name="todo">TODO</string>
+    <string name="fundo">fundo de login\n</string>
+    <string name="login">Login</string>
+    <string name="dwwdw">TODO</string>
+    <string name="yjyj">TODO</string>
+    <string name="loginn">LOGIN</string>
+    <string name="Senha">Senha\n\n</string>
+    <string name="senha">Senha</string>
+    <string name="termos">Termos</string>
+    <string name="termoss">Termos</string>
+    <string name="iconeperfil">icone\n</string>
+    <string name="iconeperfill">TODO</string>
+    <string name="esqueceu_a_senha">Esqueceu a senha</string>
+    <string name="esqueceu_a_senhaa">Esqueceu a senha?</string>
+    <string name="google">google\n</string>
+    <string name="registrar">REGISTRAR</string>
+    <string name="l_o_g_i_n">L O G I N</string>
+    <string name="imgSplash">TODO</string>
+    <string name="title_activity_cadastro">Cadastro</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="cadastrar">CADASTRAR</string>
+    <string name="confirme_a_senha">Confirme a Senha</string>
+    <string name="email">Email</string>
+    <string name="nome">Nome</string>
+    <string name="senhaa">Senha</string>
+    <string name="cadastro">CADASTRO</string>
+    <string name="LembrarSenha">lembrar senha</string>
+    <string name="voltar">VOLTAR</string>
+    <string name="pesquisar">Pesquisar</string>
+    <string name="pesquisarr">Pesquisar</string>
+
+    <!--DESCRIÇÃO PARA AS FOTOS DO SLIDE    -->
+    <string name="slide1">Fundo com uma escova de lavar</string>
+    <string name="slide2">Frasco com o logo da loja</string>
+    <string name="slide3">Sneaker de fundo</string>
+    <string name="slide4">Sneaker com os produtos da loja</string>
+    <string name="slide5">Produto da loja</string>
+    <string name="slide6">Produtos da loja em um fundo de uma quadra </string>
+    <string name="slide7">Sneaker com o produto da loja</string>
+    <string name="slide8">Raquete de tênis com o produto da loja</string>
+    <string name="slide9">Raquete com os produtos</string>
+    <string name="slide10">Raquete com os produtos</string>
+    <!-- FIM SLIDE   -->
+    <string name="icone_slide_voltar">voltar slide</string>
+    <string name="btn_proximo_slide">Proximo slide</string>
+    <string name="anuncio">Anuncio 1</string>
+    <string name="anuncio2">Anuncio 2</string>
+    <string name="caixa_dos_anuncios">caixa dos anuncios</string>
+    <string name="anuncio3">anuncio3</string>
+    <string name="caixa_scroll">caixa scroll</string>
+    <!--  IMG DE DICAS DE SNEAKER  -->
+    <string name="dica">dica1</string>
+    <string name="dica2">dica2</string>
+    <string name="dica3">dica3</string>
+    <string name="dica4">dica4</string>
+    <string name="dica5">dica5</string>
+    <string name="dica6">dica6</string>
+    <string name="dica7">dica7</string>
+    <!-- FIM DICAS   -->
+
+    <!--  ICONES NAVBAR  -->
+    <string name="entrega">Entrega</string>
+    <string name="home">Home</string>
+    <string name="pag">Pag</string>
+    <string name="pedido">Pedido</string>
+
+    <!-- SERVIÇOS   -->
+    <!--  1   -->
+    <string name="servi_o">Serviço</string>
+    <string name="txt_logo_top">txt_logo_top</string>
+    <string name="adicionar_ao_carrinho">ADD AO CARRINHO</string>
+    <string name="nome_do_servi_o">Serviço 1</string>
+    <string name="r_50_00">R$ 50.00</string>
+    <string name="titulo_servico">Higienização geral</string>
+    <string name="img_servico1">img_servico1</string>
+    <string name="icone_de_perfil_login">icone de perfil login</string>
+    <string name="logo_perfil">logo_perfil</string>
+    <string name="barra_de_decora_o_login">barra de decoração login</string>
+    <string name="barra_de_decora_o_login2">barra de decoração login</string>
+    <string name="or">OR</string>
+    <string name="email1">Email</string>
+    <string name="decora_o_de_login">decoração de login</string>
+    <string name="txtLogin">txt login</string>
+    <string name="pedido_finalizado">PEDIDO FINALIZADO</string>
+    <string name="logo_entrega">logo da entrega</string>
+    <string name="logo_andamento">imagem de andamento de pedido</string>
+    <string name="data_do_pedido">DATA DO PEDIDO</string>
+    <string name="d_h_p">00/0 00:00</string>
+    <string name="img_calendario">img_calendario</string>
+    <string name="img_finalizado">img_finalizado</string>
+    <string name="servi_o_em_andamento">SERVIÇO EM ANDAMENTO</string>
+    <string name="status_do_pedido">STATUS DO PEDIDO</string>
+    <string name="d_h_f">00/0 00:00</string>
+    <string name="_00_0_00_00">00/0 00:00</string>
+    <string name="data_e_horario_do_andamento">data e horario do andamento</string>
+    <string name="whatzap">whatzap</string>
+    <string name="aumentar">Aumentar</string>
+    <string name="diminuir">Diminuir</string>
+    <string name="default_web_client_id">408869046735-pa40o322chl68l8kv6a18p0idhopb0pg.apps.googleusercontent.com</string>
+    <!--  2   -->
+
+
+</resources>

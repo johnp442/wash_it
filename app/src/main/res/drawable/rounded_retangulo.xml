@@ -1,0 +1,6 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/white" /> <!-- Cor de fundo do layout -->
+    <corners android:radius="15dp" /> <!-- Valor do raio determina o arredondamento -->
+    <stroke android:width="5dp"
+        android:color="@color/azul_do_wash_azul"/>
+</shape>

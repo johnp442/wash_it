@@ -1,0 +1,14 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <layer-list>
+            <item android:drawable="@drawable/icone_chat_pressionado" /> <!-- Ícone pressionado -->
+            <item android:drawable="@android:color/transparent" /> <!-- Fundo transparente -->
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item android:drawable="@drawable/icone_chat" /> <!-- Ícone normal -->
+            <item android:drawable="@android:color/transparent" /> <!-- Fundo transparente -->
+        </layer-list>
+    </item>
+</selector>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Estado Focado -->
+    <item android:state_focused="true">
+        <shape>
+            <!-- Altere a cor de fundo quando focado -->
+            <solid android:color="@color/cor_focada" />
+        </shape>
+    </item>
+    <!-- Outros estados -->
+    <item>
+        <shape>
+            <!-- Cor de fundo padrão -->
+            <solid android:color="@color/white" />
+            <corners android:radius="10dp"/>
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:scrollbars="vertical"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layouprincipal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <!-- Conteúdo principal da tela aqui -->
+
+        <ViewFlipper
+            android:id="@+id/sliderflipper"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:autoStart="true"
+            android:flipInterval="4000"
+            android:inAnimation="@android:anim/slide_in_left"
+            android:outAnimation="@android:anim/slide_out_right"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view">
+
+            <!-- Adicione suas ImageView aqui -->
+
+            <ImageView
+                android:id="@+id/slide3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/slide3"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/slide3" />
+
+            <ImageView
+                android:id="@+id/slide4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/slide4"
+                android:scaleType="centerCrop"
+                android:src="@drawable/slide4" />
+
+            <ImageView
+                android:id="@+id/slide1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/slide1"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/slide1" />
+
+            <ImageView
+                android:id="@+id/slide5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/slide5"
+                android:scaleType="centerCrop"
+                android:src="@drawable/slide5" />
+
+            <ImageView
+                android:id="@+id/slide11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/slide5"
+                android:scaleType="centerCrop"
+                android:src="@drawable/slide11" />
+
+            <ImageView
+                android:id="@+id/slide12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/slide5"
+                android:scaleType="centerCrop"
+                android:src="@drawable/slide12" />
+
+            <ImageView
+                android:id="@+id/slide13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/slide5"
+                android:scaleType="centerCrop"
+                android:src="@drawable/slide13" />
+
+            <ImageView
+                android:id="@+id/slide6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/slide6"
+                android:scaleType="centerCrop"
+                android:src="@drawable/slide6" />
+
+            <ImageView
+
+                android:id="@+id/slide7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/slide7"
+                android:scaleType="centerCrop"
+                android:src="@drawable/slide7" />
+
+            <ImageView
+                android:id="@+id/slide8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/slide8"
+                android:scaleType="centerCrop"
+                android:src="@drawable/slide8" />
+
+            <ImageView
+                android:id="@+id/slide9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/slide9"
+                android:scaleType="centerCrop"
+                android:src="@drawable/slide9" />
+
+            <ImageView
+                android:id="@+id/slide10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/slide10"
+                android:src="@drawable/slide10" />
+
+
+            <ImageView
+                android:id="@+id/slide2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/slide2"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/slide2" />
+
+
+        </ViewFlipper>
+
+        <!-- Fim do conteúdo principal -->
+
+
+        <View
+            android:id="@+id/view_bg_fundo"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:background="@drawable/navtop"
+            android:backgroundTint="@color/azul_do_wash_azul"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Campo de pesquisa com ícone e texto -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/searchTextInputLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="18dp"
+            android:textColorHint="@color/black"
+            app:hintTextColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/barra_de_decoracao"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_bg_fundo"
+            app:tint="@color/azul_do_wash_azul" />
+
+        <ImageView
+            android:id="@+id/view2"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/barra_de_decoracao"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sliderflipper"
+            app:tint="@color/azul_do_wash_azul" />
+
+        <!-- BTN DE VOLTAR IMG DO SLIDE -->
+
+        <ImageView
+            android:id="@+id/view3"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:src="@drawable/barra_de_decoracao"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:tint="@color/azul_do_wash_azul" />
+
+        <ImageButton
+            android:id="@+id/btnAnterior"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/bg_transparente"
+            android:contentDescription="@string/icone_slide_voltar"
+            app:layout_constraintBottom_toBottomOf="@+id/sliderflipper"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/sliderflipper"
+            app:srcCompat="@drawable/icone_voltar_slide" />
+
+        <!-- BTN DE PROXIMO IMG DO SLIDE -->
+        <ImageButton
+            android:id="@+id/btnProximo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/bg_transparente"
+            android:contentDescription="@string/btn_proximo_slide"
+            app:layout_constraintBottom_toBottomOf="@+id/sliderflipper"
+            app:layout_constraintEnd_toEndOf="@+id/sliderflipper"
+            app:layout_constraintTop_toTopOf="@+id/sliderflipper"
+            app:srcCompat="@drawable/icone_proximo_slide" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:layout_constraintTop_toBottomOf="@+id/view2">
+
+            <!-- ANÚNCIOS -->
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/anuncio1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/anuncio"
+                android:scaleType="centerCrop"
+                android:src="@drawable/anuncio1" />
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/anuncio2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/anuncio2"
+                tools:ignore="ImageContrastCheck" />
+
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view3">
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/cinza"
+                android:columnCount="7"
+                android:orientation="horizontal"
+                android:scrollbarSize="8dp"
+                android:scrollbars="horizontal">
+
+                <ImageView
+                    android:id="@+id/dica1"
+                    android:layout_width="200dp"
+                    android:layout_height="240dp"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:contentDescription="@string/dica"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/dica1" />
+
+                <ImageView
+                    android:id="@+id/dica2"
+                    android:layout_width="200dp"
+                    android:layout_height="240dp"
+                    android:contentDescription="@string/dica2"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/dica2" />
+
+
+                <ImageView
+                    android:id="@+id/dica3"
+                    android:layout_width="200dp"
+                    android:layout_height="240dp"
+                    android:contentDescription="@string/dica3"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/dica3" />
+
+                <ImageView
+                    android:id="@+id/dica4"
+                    android:layout_width="200dp"
+                    android:layout_height="240dp"
+                    android:contentDescription="@string/dica4"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/dica4" />
+
+
+                <ImageView
+                    android:id="@+id/dica5"
+                    android:layout_width="200dp"
+                    android:layout_height="240dp"
+                    android:contentDescription="@string/dica5"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/dica5" />
+
+
+                <ImageView
+                    android:id="@+id/dica6"
+                    android:layout_width="200dp"
+                    android:layout_height="240dp"
+                    android:contentDescription="@string/dica6"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/dica6" />
+
+
+                <ImageView
+                    android:id="@+id/dica7"
+                    android:layout_width="200dp"
+                    android:layout_height="240dp"
+                    android:contentDescription="@string/dica7"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/dica7" />
+
+
+            </GridLayout>
+        </HorizontalScrollView>
+
+        <!-- BottomNavigationView -->
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom"
+            android:background="@color/azul_do_wash_azul"
+            app:itemIconSize="35dp"
+            app:itemIconTint="@color/white"
+            app:itemTextColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/footerLayout"
+            app:menu="@menu/bottom_navigation_menu"
+            tools:ignore="VisualLintBottomNav" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerVideos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+        <LinearLayout
+            android:id="@+id/footerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="bottom"
+            android:background="@drawable/efeito_3d_button"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerVideos">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sobre nós"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:layout_width="226dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Na Wash It, sabemos que o detalhe faz toda a diferença. Somos uma lavanderia especializada em sneakers, e nosso objetivo é garantir que seus calçados recebam o tratamento cuidadoso e personalizado que merecem."
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                tools:ignore="TextSizeCheck" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Social Midia"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white"
+                android:textSize="25dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:srcCompat="@drawable/icone_instagram" />
+
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    app:srcCompat="@drawable/icone_msg" />
+
+                <ImageView
+                    android:id="@+id/imageView15"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    app:srcCompat="@drawable/icone_email" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/barra_de_decoracao"
+                android:backgroundTint="@color/azul_do_wash_azul"/>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:elevation="5dp"
+                android:fontFamily="@font/bungee"
+                android:text="Wash it"
+                android:textColor="@color/cinza"
+                android:textSize="30sp"
+                 />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Lavanderia de sneakers"
+                android:textColor="@color/white"
+                android:gravity="center"/>
+
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="© Copyright 2023 "
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
+

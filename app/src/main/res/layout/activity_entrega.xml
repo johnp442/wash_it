@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    android:orientation="vertical"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.Entrega">
+    <!-- BARRA COM O LOGO WASH IT   -->
+
+    <View
+        android:id="@+id/bg_barra"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/navtop"
+        android:backgroundTint="@color/white"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/txt_logo_top"
+        android:elevation="10dp"
+        android:foregroundGravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/nome_logo_wash"
+        app:layout_constraintBottom_toBottomOf="@+id/bg_barra"
+        app:layout_constraintEnd_toEndOf="@+id/bg_barra"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/bg_barra"
+        app:layout_constraintTop_toTopOf="@+id/bg_barra"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/barra_de_decoracao"
+        android:backgroundTint="@color/azul_do_wash_azul"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bg_barra" />
+    <!-- FIM BARRA    -->
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/view9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/fundo_decorativo_servicos"
+        android:elevation="10dp"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view4">
+
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="170dp"
+            android:layout_height="70dp"
+            android:contentDescription="@string/logo_entrega"
+            android:elevation="10dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.066"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/view9"
+            app:srcCompat="@drawable/entrega" />
+
+        <!--  FIM BG  -->
+        <!-- BARRA DE DATA DE PEDIDO   -->
+
+
+        <View
+            android:id="@+id/view11"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/barra_de_decoracao"
+            android:backgroundTint="@color/azul_do_wash_azul"
+            android:elevation="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/view9"
+            app:layout_constraintStart_toStartOf="@+id/view9"
+            app:layout_constraintTop_toBottomOf="@+id/view10" />
+
+        <ImageView
+            android:id="@+id/imgDatapedido"
+            android:layout_width="103dp"
+            android:layout_height="62dp"
+            android:contentDescription="@string/img_calendario"
+            android:elevation="10dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@+id/view11"
+            app:layout_constraintStart_toStartOf="@+id/view11"
+            app:layout_constraintTop_toTopOf="@+id/view11"
+            app:srcCompat="@drawable/icone_calendario_entrega" />
+
+        <TextView
+            android:id="@+id/txtDatapedido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:text="@string/data_do_pedido"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/view11"
+            app:layout_constraintStart_toEndOf="@+id/imgDatapedido"
+            app:layout_constraintTop_toTopOf="@+id/view11" />
+
+        <!-- FIM DATA   -->
+
+        <!-- BARRA  SERVIÇO ANDAMENTO  -->
+        <View
+            android:id="@+id/view12"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/barra_de_decoracao"
+            android:backgroundTint="@color/azul_do_wash_azul"
+            android:elevation="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/view9"
+            app:layout_constraintStart_toStartOf="@+id/view9"
+            app:layout_constraintTop_toBottomOf="@+id/view11" />
+
+        <ImageView
+            android:id="@+id/imgAndamento"
+            android:layout_width="103dp"
+            android:layout_height="62dp"
+            android:contentDescription="@string/logo_andamento"
+            android:elevation="10dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@+id/view12"
+            app:layout_constraintStart_toStartOf="@+id/view12"
+            app:layout_constraintTop_toTopOf="@+id/view12"
+            app:srcCompat="@drawable/icone_andamento_entrega" />
+
+        <TextView
+            android:id="@+id/s_andamento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:text="@string/servi_o_em_andamento"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/view12"
+            app:layout_constraintStart_toEndOf="@+id/imgAndamento"
+            app:layout_constraintTop_toTopOf="@+id/view12" />
+
+        <TextView
+            android:id="@+id/txtData_horas_Andamento"
+            android:layout_width="50dp"
+            android:layout_height="47dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="@string/data_e_horario_do_andamento"
+            android:elevation="10dp"
+            android:text="@string/_00_0_00_00"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view12"
+            app:layout_constraintEnd_toEndOf="@+id/view12"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/s_andamento"
+            app:layout_constraintTop_toTopOf="@+id/view12"
+            app:layout_constraintVertical_bias="0.625" />
+
+        <!-- FIM ANDAMENTO   -->
+
+        <!-- PEDIDO FINALIZADO   -->
+
+
+        <TextView
+            android:id="@+id/txtData_horas_pedido"
+            android:layout_width="50dp"
+            android:layout_height="47dp"
+            android:layout_marginBottom="10dp"
+            android:elevation="10dp"
+            android:text="@string/d_h_p"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view11"
+            app:layout_constraintEnd_toEndOf="@+id/view11"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/txtDatapedido"
+            app:layout_constraintTop_toTopOf="@+id/view11"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <View
+            android:id="@+id/view13"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/barra_de_decoracao"
+            android:backgroundTint="@color/azul_do_wash_azul"
+            android:elevation="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/view9"
+            app:layout_constraintStart_toStartOf="@+id/view9"
+            app:layout_constraintTop_toBottomOf="@+id/view12" />
+
+        <ImageView
+            android:id="@+id/imgFinalizado"
+            android:layout_width="103dp"
+            android:layout_height="62dp"
+            android:contentDescription="@string/img_finalizado"
+            android:elevation="10dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@+id/view13"
+            app:layout_constraintStart_toStartOf="@+id/view13"
+            app:layout_constraintTop_toTopOf="@+id/view13"
+            app:srcCompat="@drawable/icone_finalizado_entrega" />
+
+
+        <TextView
+            android:id="@+id/P_finalizado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:text="@string/pedido_finalizado"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/view13"
+            app:layout_constraintStart_toEndOf="@+id/imgFinalizado"
+            app:layout_constraintTop_toTopOf="@+id/view13" />
+
+
+        <TextView
+            android:id="@+id/txtData_horas_Finalizado"
+            android:layout_width="50dp"
+            android:layout_height="47dp"
+            android:layout_marginBottom="10dp"
+            android:elevation="10dp"
+            android:text="@string/d_h_f"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view13"
+            app:layout_constraintEnd_toEndOf="@+id/view13"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/P_finalizado"
+            app:layout_constraintTop_toTopOf="@+id/view13"
+            app:layout_constraintVertical_bias="0.625" />
+
+
+        <View
+            android:id="@+id/view10"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/barra_de_decoracao"
+            android:backgroundTint="@color/azul_do_wash_azul"
+            app:layout_constraintEnd_toEndOf="@+id/view9"
+            app:layout_constraintStart_toStartOf="@+id/view9"
+            app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            android:text="#00001"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/view10"
+            app:layout_constraintEnd_toEndOf="@+id/view10"
+            app:layout_constraintHorizontal_bias="0.783"
+            app:layout_constraintStart_toEndOf="@+id/textView5"
+            app:layout_constraintTop_toTopOf="@+id/view10" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:text="@string/status_do_pedido"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/view10"
+            app:layout_constraintEnd_toEndOf="@+id/view10"
+            app:layout_constraintStart_toStartOf="@+id/view10"
+            app:layout_constraintTop_toTopOf="@+id/view10" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom"
+        android:background="@color/azul_do_wash_azul"
+        app:itemIconSize="35dp"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_navigation_menu"
+        tools:ignore="VisualLintBottomNav" />
+
+    <Button
+        android:id="@+id/btnSuporte"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="63dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/button_retangulo_selector"
+        android:elevation="10dp"
+        android:text="SUPORTE"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view9"
+        app:layout_constraintVertical_bias="0.083" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Itens do menu   -->
+    <item
+        android:id="@+id/idEntrega"
+        android:title="@string/entrega"
+        android:icon="@drawable/icone_car"/>
+    <item
+        android:id="@+id/idServico"
+        android:title="@string/servi_o"
+        android:icon="@drawable/icone_service"/>
+    <item
+        android:id="@+id/idHome"
+        android:title="@string/home"
+        android:icon="@drawable/baseline_home_24"/>
+    <item
+        android:id="@+id/idPedido"
+        android:title="@string/pedido"
+        android:icon="@drawable/baseline_shopping_cart_24" />
+    <item
+        android:id="@+id/idPagamento"
+        android:title="@string/pag"
+        android:icon="@drawable/iconepag"/>
+</menu>

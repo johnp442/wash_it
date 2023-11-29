@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="iconeRetangulo">#5B5B5B</color>
+    <color name="btnCadastrar">#1D1D1D</color>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">@color/white</color>
+    <color name="bgnavigation">#111B25</color>
+    <color name="cinza">#ECEDEC</color>
+    <color name="bg_azulbb">#4683BA</color>
+    <color name="cinzaLight">#E1E1E1</color>
+
+    <!-- INPUT DE PESQUISA QUANDO ESTÁ EM FOCO   -->
+    <color name="cor_focada">#FFFFFF</color> <!-- Vermelho quando focado -->
+    <color name="cor_padrao">#2196F3</color> <!-- Verde em outros estados -->
+    <!-- 2 COR DO APP   -->
+    <color name="azul_do_wash_azul">#4683BA</color>
+    <color name="btnEfeito">#B54683BA</color>
+
+
+</resources>

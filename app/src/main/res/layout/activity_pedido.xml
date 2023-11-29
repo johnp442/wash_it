@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.Pedido">
+    <!-- BARRA DO LOGO   -->
+
+
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/barra_de_decoracao"
+        android:backgroundTint="@color/white"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnvoltarCarrinho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_selector"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/view8"
+        app:layout_constraintEnd_toStartOf="@+id/imageView8"
+        app:layout_constraintHorizontal_bias="0.29"
+        app:layout_constraintStart_toStartOf="@+id/view7"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:elevation="10dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/view7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/view7"
+        app:layout_constraintTop_toTopOf="@+id/view7"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/nome_logo_wash" />
+
+    <View
+        android:id="@+id/view8"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/barra_de_decoracao"
+        android:backgroundTint="@color/azul_do_wash_azul"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view7" />
+    <!-- FIM   -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        android:background="@drawable/fundo_decorativo_servicos"
+        android:backgroundTint="@color/white"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view8"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:elevation="10dp"
+                android:text="PEDIDO"
+                android:layout_weight="1"
+                android:textColor="@color/azul_do_wash_azul"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnLimpar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="0"
+                android:background="@drawable/efeito_de_click"
+                android:drawableEnd="@drawable/icone_lixeira"
+                android:drawableTint="@color/azul_do_wash_azul"
+                android:text="Limpar"
+                android:textColor="@color/azul_do_wash_azul" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:id="@+id/parentLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Child layouts will be added here dynamically -->
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="328dp"
+                android:layout_height="50dp"
+                android:text="FORMA DE PAGAMENTO"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/azul_do_wash_azul"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <!-- Campo de escolha da forma de pagamento usando Spinner -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/azul_do_wash_azul"
+                android:text="Selecionar forma de pagamento:" />
+
+            <!-- Campo para preencher o CEP -->
+            <Spinner
+                android:id="@+id/paymentMethodSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                style="@style/SpinnerStyle"
+                android:background="@color/azul_do_wash_azul"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:minHeight="48dp" />
+
+            <!-- Campo para selecionar o endereço salvo -->
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Selecionar endereço:"
+                android:textColor="@color/azul_do_wash_azul" />
+
+            <Spinner
+                android:id="@+id/addressSpinner"
+                android:layout_width="match_parent"
+                style="@style/SpinnerStyle"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/azul_do_wash_azul"
+                android:minHeight="48dp" />
+
+
+            <!-- Campo para exibir o total do pedido com o valor -->
+
+            <TextView
+                android:id="@+id/txtCadastroNV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_selector"
+                android:clickable="true"
+                android:minHeight="48dp"
+                android:text="Cadastrar um novo endereço"
+                android:textColor="@color/azul_do_wash_azul" />
+
+
+
+            <LinearLayout
+                android:id="@+id/subTotalLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/subTotal">
+
+                <TextView
+                    android:id="@+id/subTotalLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sub total:"
+                    android:textColor="@color/azul_do_wash_azul"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginRight="10dp"
+                    android:text=""
+                    android:textSize="12sp"
+                    android:textColor="@color/azul_do_wash_azul"/>
+
+                <TextView
+                    android:id="@+id/subTotalValue"
+                    android:layout_width="wrap_content"
+                    android:gravity="right"
+                    android:layout_height="wrap_content"
+                    android:text="100,00"
+                    android:textColor="@color/azul_do_wash_azul"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/taxaEntregaLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/taxaEntrega">
+
+                <TextView
+                    android:id="@+id/taxaEntregaLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Taxa de entrega:"
+                    android:textColor="@color/azul_do_wash_azul"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginRight="10dp"
+                    android:text=""
+                    android:textSize="12sp"
+                    android:textColor="@color/azul_do_wash_azul"/>
+
+                <TextView
+                    android:id="@+id/taxaEntregaValue"
+                    android:layout_width="wrap_content"
+                    android:gravity="right"
+                    android:layout_height="wrap_content"
+                    android:text="10,00"
+                    android:textColor="@color/azul_do_wash_azul"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tp_pedidoLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tp_pedido">
+
+                <TextView
+                    android:id="@+id/tp_pedidoLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total do Pedido:"
+                    android:textColor="@color/azul_do_wash_azul"
+                    android:textSize="12sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginLeft="152dp"
+                    android:layout_marginRight="10dp"
+                    android:text=""
+                    android:textSize="12sp"
+                    android:textColor="@color/azul_do_wash_azul"/>
+
+                <TextView
+                    android:id="@+id/tp_pedidoValue"
+                    android:layout_width="wrap_content"
+                    android:gravity="right"
+                    android:layout_height="wrap_content"
+                    android:text="110,00"
+                    android:textColor="@color/azul_do_wash_azul"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/button_retangulo_selector"
+                android:elevation="10dp"
+                android:minHeight="48dp"
+                android:text="CONFIRMAR"
+                tools:ignore="TextContrastCheck" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom"
+        android:elevation="10dp"
+        android:background="@color/azul_do_wash_azul"
+        app:itemIconSize="35dp"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_navigation_menu"
+        tools:ignore="VisualLintBottomNav" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
